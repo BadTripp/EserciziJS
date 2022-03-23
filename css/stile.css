@@ -1,0 +1,180 @@
+﻿/* Elementi stili font esterni */
+@font-face {
+  font-family:'PinyonR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pinyon Regular'), local('Pinyon_Regular'), local('PinyonR'),
+       url('../font/pinyon-script-regular.woff2') format('woff2'),
+       url('../font/pinyon-script-regular.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-display: swap;
+}
+
+* { border:0; margin:0; padding:0;}
+a, .non_sottolineato { text-decoration:none; }
+table { border-spacing: 0px 0px; }
+div, table { position:relative; }
+.nero, .link-00 { color:#000000; }
+.bianco, .link-01, .link-02:hover { color:#ffffff; }
+.giallo-00, .link-02 { color:#857e72; }
+.sfondo-nero { background-color:#000000; }
+.sfondo-bianco { background-color:#ffffff; }
+.sfondo-verde-00 { background-color:#2e4b37; }
+.assoluto { position:absolute !important; }
+.fisso { position:fixed !important; }
+.origine { top:0px; left:0px; }
+.totale { width:100%; height:100%; }
+.largo, .ratio { width:100%; }
+.alto { height:100%; }
+.meta { width:50%; }
+.content-ratio { position:absolute !important; top:0px; left:0px; width:100%; height:100%; }
+.base-avviso { position:fixed !important; top:0px; left:0px; width:100%; height:100%; visibility:hidden; overflow:hidden; z-index:10000; }
+.sfondo-base { background-position:center; background-repeat:no-repeat; background-size:cover; }
+.centrato { margin:0px auto 0px auto; }
+.chiusura { position:relative; clear:both; }
+.rotondo { border-radius:50%; }
+.arrotondato { border-radius:10px; }
+.sinistra { float:left; }
+.destra { float:right; }
+.tabella { display:table; }
+.cella { display:table-cell; }
+.flessibile { display:flex; }
+.txt-centro { text-align:center; }
+.txt-destro { text-align:right; }
+.txt-sinistro { text-align:left; }
+.txt-alto { vertical-align:top; }
+.txt-mezzo { vertical-align:middle; }
+.txt-basso { vertical-align:bottom; }
+.giustificato { text-align:justify; }
+.minuscolo { text-transform:lowercase; }
+.maiuscolo { text-transform:uppercase; }
+.sottolineato { text-decoration:underline; }
+.grassetto { font-weight:bold; }
+.corsivo { font-style:italic; }
+.normale { text-transform:none; }
+.invisibile { visibility:hidden; }
+.nascosto, .display-port { display:none; }
+.limitato { overflow:hidden; }
+.cursore { cursor:pointer; }
+.inlinea { white-space:nowrap; }
+.font-zero { font-size:0px; line-height:0px; }
+.fade { opacity:.00; }
+.loader { background:#ffffff url(../img/icone/icona-loader.gif) center no-repeat; }
+.opaco-00 { opacity:.80; }
+.ombra { box-shadow:0px 2px 2px rgba(0, 0, 0, 0.5); }
+body { font-family:courier; font-size:0px; line-height:0px; -webkit-text-size-adjust:100%; color:#000000; background-color:#ffffff; z-index:0; }
+
+/* -ratio- */
+.ratio-firma { padding-top:25.29%; }
+.ratio-logo { padding-top:138.71%; }
+
+
+/* -font- */
+.pin-reg { font-family:'PinyonR'; }
+h1, h2, h3, h4, h5, h6 { font-size:0px; line-height:0px; font-weight:normal; }
+
+/* -elementi homepage- */
+div#box-frase { top:60.87%; left:55.7%; }
+div#box-frase p { font-size:18px; line-height:21px; }
+div#frase { width:70.14%; margin:14px auto 0px 18.08%; }
+div#img-firma { background-image:url(../img/firma.png); }
+@media only screen and (min-width:0px) and (max-width:374px) {
+  div#box-frase p { font-size:12px; line-height:15px; }
+}
+@media only screen and (min-width:375px) and (max-width:767px) {
+  div#box-frase p { font-size:15px; line-height:18px; }
+}
+@media only screen and (min-width:0px) and (max-width:1023px) {
+  div#box-frase { top:65%; left:5%; }
+}
+
+/* -testata- */
+div#testata div#spazio-logo { width:100%; max-width:62px; }
+div#logo { background-image:url(../img/logo-azienda-agricola-chiappini.png); }
+div#box-lingue { font-size:14px; line-height:17px; }
+div#box-lingue span { padding:0px 10px 0px 10px; }
+@media only screen and (min-width:0px) and (max-width:1023px) {
+  div#box-testata { top:10px; right:10px; width:200px; }
+  div#box-menu { margin:0px 0px 10px 0px; }
+  div#box-menu div.voce-menu { font-size:12px; line-height:24px; text-align:center; border-bottom:solid 1px #595959; }
+  div#box-lingue { margin:0px 0px 10px 0px; }
+  table#box-logo-mobile { margin:20px 0px 20px 0px; }
+  div#box-icona-menu { width:30px; height:20px; margin:0px auto 0px auto; }
+  div#box-icona-menu div { position:absolute !important; width:100%; height:4px; background-color:#c19d64; }
+  div#riga-up { top:0px; }
+  div#riga-md { top:8px; }
+  div#riga-dw { bottom:0px; }
+  div#spazio-logo { margin:0px 20px 0px auto; }
+}
+@media only screen and (min-width:1024px) {
+  div#box-testata { bottom:29px; width:100%; padding:10px 0px 8px 0px; }
+  div#testata { width:91%; margin:0px auto 0px auto; display:table; }
+  div#testata div.blocco-testata { display:table-cell; vertical-align:middle; }
+  div#testata div.box-logo { width:6.81%; }
+  td#cella-icona-menu { display:none; }
+  div#box-menu { display:table; margin:0px auto 23px auto; }
+  div#box-menu div.voce-menu { font-size:12px; line-height:15px; padding:0px 12px 0px 12px; display:table-cell; }
+}
+/* -footer- */
+div#box-footer { bottom:0px; }
+div#box-footer table { width:90.8%; margin:0px auto 0px auto; border-spacing:0px 3px; }
+div#box-footer table td.lato-footer { width:50%; }
+div#box-footer span { font-size:8px; line-height:11px; padding:0px 10px 0px 10px; }
+@media only screen and (min-width:0px) and (max-width:666px) {
+  td#box-vuoto { display:none; }
+}
+
+/* -immagini slide- */
+@media only screen and (min-width:0px) and (max-width:599px) and (orientation:landscape) {
+  div#slide-1 { background-image:url(../img/sfondi/index/landscape/sma/1.jpg); }
+  div#slide-2 { background-image:url(../img/sfondi/index/landscape/sma/2.jpg); }
+  div#slide-3 { background-image:url(../img/sfondi/index/landscape/sma/3.jpg); }
+  div#slide-4 { background-image:url(../img/sfondi/index/landscape/sma/4.jpg); }
+  div#slide-5 { background-image:url(../img/sfondi/index/landscape/sma/5.jpg); }
+  div#slide-6 { background-image:url(../img/sfondi/index/landscape/sma/6.jpg); }
+  div#slide-7 { background-image:url(../img/sfondi/index/landscape/sma/7.jpg); }
+  div#slide-8 { background-image:url(../img/sfondi/index/landscape/sma/8.jpg); }
+}
+@media only screen and (min-width:600px) and (max-width:1023px) and (orientation:landscape) {
+  div#slide-1 { background-image:url(../img/sfondi/index/landscape/med/1.jpg); }
+  div#slide-2 { background-image:url(../img/sfondi/index/landscape/med/2.jpg); }
+  div#slide-3 { background-image:url(../img/sfondi/index/landscape/med/3.jpg); }
+  div#slide-4 { background-image:url(../img/sfondi/index/landscape/med/4.jpg); }
+  div#slide-5 { background-image:url(../img/sfondi/index/landscape/med/5.jpg); }
+  div#slide-6 { background-image:url(../img/sfondi/index/landscape/med/6.jpg); }
+  div#slide-7 { background-image:url(../img/sfondi/index/landscape/med/7.jpg); }
+  div#slide-8 { background-image:url(../img/sfondi/index/landscape/med/8.jpg); }
+}
+@media only screen and (min-width:1024px) and (orientation:landscape) {
+  div#slide-1 { background-image:url(../img/sfondi/index/landscape/big/1.jpg); }
+  div#slide-2 { background-image:url(../img/sfondi/index/landscape/big/2.jpg); }
+  div#slide-3 { background-image:url(../img/sfondi/index/landscape/big/3.jpg); }
+  div#slide-4 { background-image:url(../img/sfondi/index/landscape/big/4.jpg); }
+  div#slide-5 { background-image:url(../img/sfondi/index/landscape/big/5.jpg); }
+  div#slide-6 { background-image:url(../img/sfondi/index/landscape/big/6.jpg); }
+  div#slide-7 { background-image:url(../img/sfondi/index/landscape/big/7.jpg); }
+  div#slide-8 { background-image:url(../img/sfondi/index/landscape/big/8.jpg); }
+}
+@media only screen and (min-width:0px) and (max-width:799px) and (orientation:portrait) {
+  div#slide-1 { background-image:url(../img/sfondi/index/portrait/sma/1.jpg); }
+  div#slide-2 { background-image:url(../img/sfondi/index/portrait/sma/2.jpg); }
+  div#slide-3 { background-image:url(../img/sfondi/index/portrait/sma/3.jpg); }
+  div#slide-4 { background-image:url(../img/sfondi/index/portrait/sma/4.jpg); }
+  div#slide-5 { background-image:url(../img/sfondi/index/portrait/sma/5.jpg); }
+  div#slide-6 { background-image:url(../img/sfondi/index/portrait/sma/6.jpg); }
+  div#slide-7 { background-image:url(../img/sfondi/index/portrait/sma/7.jpg); }
+  div#slide-8 { background-image:url(../img/sfondi/index/portrait/sma/8.jpg); }
+}
+@media only screen and (min-width:800px) and (orientation:portrait) {
+  div#slide-1 { background-image:url(../img/sfondi/index/portrait/med/1.jpg); }
+  div#slide-2 { background-image:url(../img/sfondi/index/portrait/med/2.jpg); }
+  div#slide-3 { background-image:url(../img/sfondi/index/portrait/med/3.jpg); }
+  div#slide-4 { background-image:url(../img/sfondi/index/portrait/med/4.jpg); }
+  div#slide-5 { background-image:url(../img/sfondi/index/portrait/med/5.jpg); }
+  div#slide-6 { background-image:url(../img/sfondi/index/portrait/med/6.jpg); }
+  div#slide-7 { background-image:url(../img/sfondi/index/portrait/med/7.jpg); }
+  div#slide-8 { background-image:url(../img/sfondi/index/portrait/med/8.jpg); }
+}
+
+
+
