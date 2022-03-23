@@ -22,7 +22,7 @@ function move (direzione){
         case 2:
             step=quadrato.offsetTop+speed; 
             quadrato.style.top=step+"px";
-                break;
+            break;
         case 3:
             step=quadrato.offsetLeft-speed;
             quadrato.style.left=step+"px"; 
